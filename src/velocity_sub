@@ -1,0 +1,21 @@
+from setuptools import setup
+
+package_name = 'velocity_subscriber_xyz'
+
+setup(
+    name=package_name,
+    version='0.0.0',
+    packages=[package_name],
+    install_requires=['setuptools'],
+    zip_safe=True,
+    maintainer='Your Name',
+    maintainer_email='your.email@example.com',
+    description='A unique velocity subscriber node',
+    license='Apache License 2.0',
+    tests_require=['pytest'],
+    entry_points={
+        'console_scripts': [
+            'vel_sub = velocity_subscriber_xyz.vel_sub:main',
+        ],
+    },
+)

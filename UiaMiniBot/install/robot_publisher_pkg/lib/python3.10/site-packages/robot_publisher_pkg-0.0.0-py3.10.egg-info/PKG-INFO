@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: robot-publisher-pkg
+Version: 0.0.0
+Summary: Publishes Twist messages to control the robot.
+Home-page: UNKNOWN
+Maintainer: Your Name
+Maintainer-email: your.email@example.com
+License: License declaration
+Platform: UNKNOWN
+
+UNKNOWN
+

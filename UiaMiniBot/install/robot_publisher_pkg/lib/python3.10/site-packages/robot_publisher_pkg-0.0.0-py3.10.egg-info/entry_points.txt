@@ -1,0 +1,3 @@
+[console_scripts]
+robot_publisher = robot_publisher_pkg.robot_publisher:main
+

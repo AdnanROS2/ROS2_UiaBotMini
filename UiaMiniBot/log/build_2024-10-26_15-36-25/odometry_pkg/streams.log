@@ -1,0 +1,24 @@
+[2.243s] Invoking command in '/home/adnan/Ros2_WS_Final/src/odometry_pkg': PYTHONPATH=/home/adnan/Ros2_WS_Final/build/odometry_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/adnan/Ros2_WS_Final/install/odometry_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/odometry_pkg build --build-base /home/adnan/Ros2_WS_Final/build/odometry_pkg/build install --record /home/adnan/Ros2_WS_Final/build/odometry_pkg/install.log --single-version-externally-managed install_data
+[2.817s] running egg_info
+[2.817s] writing ../../build/odometry_pkg/odometry_pkg.egg-info/PKG-INFO
+[2.818s] writing dependency_links to ../../build/odometry_pkg/odometry_pkg.egg-info/dependency_links.txt
+[2.818s] writing entry points to ../../build/odometry_pkg/odometry_pkg.egg-info/entry_points.txt
+[2.818s] writing requirements to ../../build/odometry_pkg/odometry_pkg.egg-info/requires.txt
+[2.818s] writing top-level names to ../../build/odometry_pkg/odometry_pkg.egg-info/top_level.txt
+[2.821s] reading manifest file '../../build/odometry_pkg/odometry_pkg.egg-info/SOURCES.txt'
+[2.831s] writing manifest file '../../build/odometry_pkg/odometry_pkg.egg-info/SOURCES.txt'
+[2.831s] running build
+[2.832s] running build_py
+[2.835s] copying odometry_pkg/odometry_node.py -> /home/adnan/Ros2_WS_Final/build/odometry_pkg/build/lib/odometry_pkg
+[2.837s] running install
+[2.837s] running install_lib
+[2.838s] copying /home/adnan/Ros2_WS_Final/build/odometry_pkg/build/lib/odometry_pkg/odometry_node.py -> /home/adnan/Ros2_WS_Final/install/odometry_pkg/lib/python3.10/site-packages/odometry_pkg
+[2.838s] byte-compiling /home/adnan/Ros2_WS_Final/install/odometry_pkg/lib/python3.10/site-packages/odometry_pkg/odometry_node.py to odometry_node.cpython-310.pyc
+[2.841s] running install_data
+[2.841s] running install_egg_info
+[2.848s] removing '/home/adnan/Ros2_WS_Final/install/odometry_pkg/lib/python3.10/site-packages/odometry_pkg-0.0.0-py3.10.egg-info' (and everything under it)
+[2.849s] Copying ../../build/odometry_pkg/odometry_pkg.egg-info to /home/adnan/Ros2_WS_Final/install/odometry_pkg/lib/python3.10/site-packages/odometry_pkg-0.0.0-py3.10.egg-info
+[2.851s] running install_scripts
+[2.894s] Installing odometry_node script to /home/adnan/Ros2_WS_Final/install/odometry_pkg/lib/odometry_pkg
+[2.904s] writing list of installed files to '/home/adnan/Ros2_WS_Final/build/odometry_pkg/install.log'
+[2.985s] Invoked command in '/home/adnan/Ros2_WS_Final/src/odometry_pkg' returned '0': PYTHONPATH=/home/adnan/Ros2_WS_Final/build/odometry_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/adnan/Ros2_WS_Final/install/odometry_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/odometry_pkg build --build-base /home/adnan/Ros2_WS_Final/build/odometry_pkg/build install --record /home/adnan/Ros2_WS_Final/build/odometry_pkg/install.log --single-version-externally-managed install_data

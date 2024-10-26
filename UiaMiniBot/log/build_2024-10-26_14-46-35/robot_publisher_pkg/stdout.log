@@ -1,0 +1,36 @@
+running egg_info
+creating ../../build/robot_publisher_pkg/robot_publisher_pkg.egg-info
+writing ../../build/robot_publisher_pkg/robot_publisher_pkg.egg-info/PKG-INFO
+writing dependency_links to ../../build/robot_publisher_pkg/robot_publisher_pkg.egg-info/dependency_links.txt
+writing entry points to ../../build/robot_publisher_pkg/robot_publisher_pkg.egg-info/entry_points.txt
+writing requirements to ../../build/robot_publisher_pkg/robot_publisher_pkg.egg-info/requires.txt
+writing top-level names to ../../build/robot_publisher_pkg/robot_publisher_pkg.egg-info/top_level.txt
+writing manifest file '../../build/robot_publisher_pkg/robot_publisher_pkg.egg-info/SOURCES.txt'
+reading manifest file '../../build/robot_publisher_pkg/robot_publisher_pkg.egg-info/SOURCES.txt'
+writing manifest file '../../build/robot_publisher_pkg/robot_publisher_pkg.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/adnan/Ros2_WS_Final/build/robot_publisher_pkg/build
+creating /home/adnan/Ros2_WS_Final/build/robot_publisher_pkg/build/lib
+creating /home/adnan/Ros2_WS_Final/build/robot_publisher_pkg/build/lib/robot_publisher_pkg
+copying robot_publisher_pkg/__init__.py -> /home/adnan/Ros2_WS_Final/build/robot_publisher_pkg/build/lib/robot_publisher_pkg
+copying robot_publisher_pkg/robot_publisher.py -> /home/adnan/Ros2_WS_Final/build/robot_publisher_pkg/build/lib/robot_publisher_pkg
+running install
+running install_lib
+creating /home/adnan/Ros2_WS_Final/install/robot_publisher_pkg/lib/python3.10/site-packages/robot_publisher_pkg
+copying /home/adnan/Ros2_WS_Final/build/robot_publisher_pkg/build/lib/robot_publisher_pkg/__init__.py -> /home/adnan/Ros2_WS_Final/install/robot_publisher_pkg/lib/python3.10/site-packages/robot_publisher_pkg
+copying /home/adnan/Ros2_WS_Final/build/robot_publisher_pkg/build/lib/robot_publisher_pkg/robot_publisher.py -> /home/adnan/Ros2_WS_Final/install/robot_publisher_pkg/lib/python3.10/site-packages/robot_publisher_pkg
+byte-compiling /home/adnan/Ros2_WS_Final/install/robot_publisher_pkg/lib/python3.10/site-packages/robot_publisher_pkg/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/adnan/Ros2_WS_Final/install/robot_publisher_pkg/lib/python3.10/site-packages/robot_publisher_pkg/robot_publisher.py to robot_publisher.cpython-310.pyc
+running install_data
+copying package.xml -> /home/adnan/Ros2_WS_Final/install/robot_publisher_pkg/share/robot_publisher_pkg
+creating /home/adnan/Ros2_WS_Final/install/robot_publisher_pkg/share/robot_publisher_pkg/launch
+copying launch/launch_main_nodes.py -> /home/adnan/Ros2_WS_Final/install/robot_publisher_pkg/share/robot_publisher_pkg/launch
+copying launch/launch_all_nodes.py -> /home/adnan/Ros2_WS_Final/install/robot_publisher_pkg/share/robot_publisher_pkg/launch
+creating /home/adnan/Ros2_WS_Final/install/robot_publisher_pkg/share/robot_publisher_pkg/urdf
+copying urdf/robot_model.urdf -> /home/adnan/Ros2_WS_Final/install/robot_publisher_pkg/share/robot_publisher_pkg/urdf
+running install_egg_info
+Copying ../../build/robot_publisher_pkg/robot_publisher_pkg.egg-info to /home/adnan/Ros2_WS_Final/install/robot_publisher_pkg/lib/python3.10/site-packages/robot_publisher_pkg-0.0.0-py3.10.egg-info
+running install_scripts
+Installing robot_publisher script to /home/adnan/Ros2_WS_Final/install/robot_publisher_pkg/lib/robot_publisher_pkg
+writing list of installed files to '/home/adnan/Ros2_WS_Final/build/robot_publisher_pkg/install.log'

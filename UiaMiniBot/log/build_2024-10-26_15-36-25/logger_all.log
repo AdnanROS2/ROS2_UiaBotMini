@@ -1,0 +1,227 @@
+[0.133s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.134s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x773fb7839690>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x773fb78385b0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x773fb78385b0>>)
+[0.345s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.345s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.345s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.345s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.345s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.345s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.345s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/adnan/Ros2_WS_Final'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.358s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.358s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.358s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.358s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src/odometry_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src/odometry_pkg) by extension 'ignore'
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src/odometry_pkg) by extension 'ignore_ament_install'
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src/odometry_pkg) by extensions ['colcon_pkg']
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src/odometry_pkg) by extension 'colcon_pkg'
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src/odometry_pkg) by extensions ['colcon_meta']
+[0.361s] Level 1:colcon.colcon_core.package_identification:_identify(src/odometry_pkg) by extension 'colcon_meta'
+[0.361s] Level 1:colcon.colcon_core.package_identification:_identify(src/odometry_pkg) by extensions ['ros']
+[0.361s] Level 1:colcon.colcon_core.package_identification:_identify(src/odometry_pkg) by extension 'ros'
+[0.364s] DEBUG:colcon.colcon_core.package_identification:Package 'src/odometry_pkg' with type 'ros.ament_python' and name 'odometry_pkg'
+[0.364s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_publisher_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.364s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_publisher_pkg) by extension 'ignore'
+[0.364s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_publisher_pkg) by extension 'ignore_ament_install'
+[0.364s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_publisher_pkg) by extensions ['colcon_pkg']
+[0.364s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_publisher_pkg) by extension 'colcon_pkg'
+[0.364s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_publisher_pkg) by extensions ['colcon_meta']
+[0.364s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_publisher_pkg) by extension 'colcon_meta'
+[0.364s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_publisher_pkg) by extensions ['ros']
+[0.364s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_publisher_pkg) by extension 'ros'
+[0.365s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_publisher_pkg' with type 'ros.ament_python' and name 'robot_publisher_pkg'
+[0.365s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleop_twist_keyboard_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.365s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleop_twist_keyboard_pkg) by extension 'ignore'
+[0.365s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleop_twist_keyboard_pkg) by extension 'ignore_ament_install'
+[0.365s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleop_twist_keyboard_pkg) by extensions ['colcon_pkg']
+[0.365s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleop_twist_keyboard_pkg) by extension 'colcon_pkg'
+[0.365s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleop_twist_keyboard_pkg) by extensions ['colcon_meta']
+[0.365s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleop_twist_keyboard_pkg) by extension 'colcon_meta'
+[0.366s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleop_twist_keyboard_pkg) by extensions ['ros']
+[0.366s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleop_twist_keyboard_pkg) by extension 'ros'
+[0.366s] DEBUG:colcon.colcon_core.package_identification:Package 'src/teleop_twist_keyboard_pkg' with type 'ros.ament_python' and name 'teleop_twist_keyboard_pkg'
+[0.366s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.366s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.366s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.366s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.366s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.391s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.391s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.394s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 331 installed packages in /opt/ros/humble
+[0.396s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.467s] Level 5:colcon.colcon_core.verb:set package 'odometry_pkg' build argument 'cmake_args' from command line to 'None'
+[0.467s] Level 5:colcon.colcon_core.verb:set package 'odometry_pkg' build argument 'cmake_target' from command line to 'None'
+[0.467s] Level 5:colcon.colcon_core.verb:set package 'odometry_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.467s] Level 5:colcon.colcon_core.verb:set package 'odometry_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.467s] Level 5:colcon.colcon_core.verb:set package 'odometry_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[0.467s] Level 5:colcon.colcon_core.verb:set package 'odometry_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[0.467s] Level 5:colcon.colcon_core.verb:set package 'odometry_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[0.467s] Level 5:colcon.colcon_core.verb:set package 'odometry_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.467s] Level 5:colcon.colcon_core.verb:set package 'odometry_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.467s] DEBUG:colcon.colcon_core.verb:Building package 'odometry_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/adnan/Ros2_WS_Final/build/odometry_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/adnan/Ros2_WS_Final/install/odometry_pkg', 'merge_install': False, 'path': '/home/adnan/Ros2_WS_Final/src/odometry_pkg', 'symlink_install': False, 'test_result_base': None}
+[0.468s] Level 5:colcon.colcon_core.verb:set package 'robot_publisher_pkg' build argument 'cmake_args' from command line to 'None'
+[0.468s] Level 5:colcon.colcon_core.verb:set package 'robot_publisher_pkg' build argument 'cmake_target' from command line to 'None'
+[0.468s] Level 5:colcon.colcon_core.verb:set package 'robot_publisher_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.468s] Level 5:colcon.colcon_core.verb:set package 'robot_publisher_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.468s] Level 5:colcon.colcon_core.verb:set package 'robot_publisher_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[0.468s] Level 5:colcon.colcon_core.verb:set package 'robot_publisher_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[0.468s] Level 5:colcon.colcon_core.verb:set package 'robot_publisher_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[0.468s] Level 5:colcon.colcon_core.verb:set package 'robot_publisher_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.468s] Level 5:colcon.colcon_core.verb:set package 'robot_publisher_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.468s] DEBUG:colcon.colcon_core.verb:Building package 'robot_publisher_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/adnan/Ros2_WS_Final/build/robot_publisher_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/adnan/Ros2_WS_Final/install/robot_publisher_pkg', 'merge_install': False, 'path': '/home/adnan/Ros2_WS_Final/src/robot_publisher_pkg', 'symlink_install': False, 'test_result_base': None}
+[0.469s] Level 5:colcon.colcon_core.verb:set package 'teleop_twist_keyboard_pkg' build argument 'cmake_args' from command line to 'None'
+[0.469s] Level 5:colcon.colcon_core.verb:set package 'teleop_twist_keyboard_pkg' build argument 'cmake_target' from command line to 'None'
+[0.469s] Level 5:colcon.colcon_core.verb:set package 'teleop_twist_keyboard_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.469s] Level 5:colcon.colcon_core.verb:set package 'teleop_twist_keyboard_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.469s] Level 5:colcon.colcon_core.verb:set package 'teleop_twist_keyboard_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[0.469s] Level 5:colcon.colcon_core.verb:set package 'teleop_twist_keyboard_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[0.469s] Level 5:colcon.colcon_core.verb:set package 'teleop_twist_keyboard_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[0.469s] Level 5:colcon.colcon_core.verb:set package 'teleop_twist_keyboard_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.469s] Level 5:colcon.colcon_core.verb:set package 'teleop_twist_keyboard_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.469s] DEBUG:colcon.colcon_core.verb:Building package 'teleop_twist_keyboard_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/adnan/Ros2_WS_Final/build/teleop_twist_keyboard_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/adnan/Ros2_WS_Final/install/teleop_twist_keyboard_pkg', 'merge_install': False, 'path': '/home/adnan/Ros2_WS_Final/src/teleop_twist_keyboard_pkg', 'symlink_install': False, 'test_result_base': None}
+[0.469s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.472s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.472s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/adnan/Ros2_WS_Final/src/odometry_pkg' with build type 'ament_python'
+[0.473s] Level 1:colcon.colcon_core.shell:create_environment_hook('odometry_pkg', 'ament_prefix_path')
+[0.478s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.478s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/adnan/Ros2_WS_Final/install/odometry_pkg/share/odometry_pkg/hook/ament_prefix_path.ps1'
+[0.480s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/adnan/Ros2_WS_Final/install/odometry_pkg/share/odometry_pkg/hook/ament_prefix_path.dsv'
+[0.482s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/adnan/Ros2_WS_Final/install/odometry_pkg/share/odometry_pkg/hook/ament_prefix_path.sh'
+[0.484s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.485s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.491s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/adnan/Ros2_WS_Final/src/robot_publisher_pkg' with build type 'ament_python'
+[0.491s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_publisher_pkg', 'ament_prefix_path')
+[0.492s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/adnan/Ros2_WS_Final/install/robot_publisher_pkg/share/robot_publisher_pkg/hook/ament_prefix_path.ps1'
+[0.494s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/adnan/Ros2_WS_Final/install/robot_publisher_pkg/share/robot_publisher_pkg/hook/ament_prefix_path.dsv'
+[0.496s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/adnan/Ros2_WS_Final/install/robot_publisher_pkg/share/robot_publisher_pkg/hook/ament_prefix_path.sh'
+[0.497s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.498s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.503s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/adnan/Ros2_WS_Final/src/teleop_twist_keyboard_pkg' with build type 'ament_python'
+[0.504s] Level 1:colcon.colcon_core.shell:create_environment_hook('teleop_twist_keyboard_pkg', 'ament_prefix_path')
+[0.504s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/adnan/Ros2_WS_Final/install/teleop_twist_keyboard_pkg/share/teleop_twist_keyboard_pkg/hook/ament_prefix_path.ps1'
+[0.506s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/adnan/Ros2_WS_Final/install/teleop_twist_keyboard_pkg/share/teleop_twist_keyboard_pkg/hook/ament_prefix_path.dsv'
+[0.507s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/adnan/Ros2_WS_Final/install/teleop_twist_keyboard_pkg/share/teleop_twist_keyboard_pkg/hook/ament_prefix_path.sh'
+[0.509s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.509s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.890s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/adnan/Ros2_WS_Final/src/odometry_pkg'
+[0.891s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.891s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.377s] WARNING:colcon.colcon_ros.task.ament_python.build:Package 'robot_publisher_pkg' doesn't explicitly install a marker in the package index (colcon-ros currently does it implicitly but that fallback will be removed in the future)
+[1.377s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/adnan/Ros2_WS_Final/src/robot_publisher_pkg'
+[1.378s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.378s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.824s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/adnan/Ros2_WS_Final/src/teleop_twist_keyboard_pkg'
+[1.824s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.824s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.645s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/adnan/Ros2_WS_Final/src/teleop_twist_keyboard_pkg': PYTHONPATH=/home/adnan/Ros2_WS_Final/build/teleop_twist_keyboard_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/adnan/Ros2_WS_Final/install/teleop_twist_keyboard_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/teleop_twist_keyboard_pkg build --build-base /home/adnan/Ros2_WS_Final/build/teleop_twist_keyboard_pkg/build install --record /home/adnan/Ros2_WS_Final/build/teleop_twist_keyboard_pkg/install.log --single-version-externally-managed install_data
+[2.650s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/adnan/Ros2_WS_Final/src/robot_publisher_pkg': PYTHONPATH=/home/adnan/Ros2_WS_Final/build/robot_publisher_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/adnan/Ros2_WS_Final/install/robot_publisher_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/robot_publisher_pkg build --build-base /home/adnan/Ros2_WS_Final/build/robot_publisher_pkg/build install --record /home/adnan/Ros2_WS_Final/build/robot_publisher_pkg/install.log --single-version-externally-managed install_data
+[2.717s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/adnan/Ros2_WS_Final/src/odometry_pkg': PYTHONPATH=/home/adnan/Ros2_WS_Final/build/odometry_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/adnan/Ros2_WS_Final/install/odometry_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/odometry_pkg build --build-base /home/adnan/Ros2_WS_Final/build/odometry_pkg/build install --record /home/adnan/Ros2_WS_Final/build/odometry_pkg/install.log --single-version-externally-managed install_data
+[3.417s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/adnan/Ros2_WS_Final/src/teleop_twist_keyboard_pkg' returned '0': PYTHONPATH=/home/adnan/Ros2_WS_Final/build/teleop_twist_keyboard_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/adnan/Ros2_WS_Final/install/teleop_twist_keyboard_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/teleop_twist_keyboard_pkg build --build-base /home/adnan/Ros2_WS_Final/build/teleop_twist_keyboard_pkg/build install --record /home/adnan/Ros2_WS_Final/build/teleop_twist_keyboard_pkg/install.log --single-version-externally-managed install_data
+[3.420s] Level 1:colcon.colcon_core.environment:checking '/home/adnan/Ros2_WS_Final/install/teleop_twist_keyboard_pkg' for CMake module files
+[3.421s] Level 1:colcon.colcon_core.environment:checking '/home/adnan/Ros2_WS_Final/install/teleop_twist_keyboard_pkg' for CMake config files
+[3.423s] Level 1:colcon.colcon_core.environment:checking '/home/adnan/Ros2_WS_Final/install/teleop_twist_keyboard_pkg/lib'
+[3.423s] Level 1:colcon.colcon_core.environment:checking '/home/adnan/Ros2_WS_Final/install/teleop_twist_keyboard_pkg/bin'
+[3.423s] Level 1:colcon.colcon_core.environment:checking '/home/adnan/Ros2_WS_Final/install/teleop_twist_keyboard_pkg/lib/pkgconfig/teleop_twist_keyboard_pkg.pc'
+[3.424s] Level 1:colcon.colcon_core.environment:checking '/home/adnan/Ros2_WS_Final/install/teleop_twist_keyboard_pkg/lib/python3.10/site-packages'
+[3.424s] Level 1:colcon.colcon_core.shell:create_environment_hook('teleop_twist_keyboard_pkg', 'pythonpath')
+[3.425s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/adnan/Ros2_WS_Final/install/teleop_twist_keyboard_pkg/share/teleop_twist_keyboard_pkg/hook/pythonpath.ps1'
+[3.426s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/adnan/Ros2_WS_Final/install/teleop_twist_keyboard_pkg/share/teleop_twist_keyboard_pkg/hook/pythonpath.dsv'
+[3.427s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/adnan/Ros2_WS_Final/install/teleop_twist_keyboard_pkg/share/teleop_twist_keyboard_pkg/hook/pythonpath.sh'
+[3.428s] Level 1:colcon.colcon_core.environment:checking '/home/adnan/Ros2_WS_Final/install/teleop_twist_keyboard_pkg/bin'
+[3.428s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(teleop_twist_keyboard_pkg)
+[3.429s] INFO:colcon.colcon_core.shell:Creating package script '/home/adnan/Ros2_WS_Final/install/teleop_twist_keyboard_pkg/share/teleop_twist_keyboard_pkg/package.ps1'
+[3.431s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/adnan/Ros2_WS_Final/install/teleop_twist_keyboard_pkg/share/teleop_twist_keyboard_pkg/package.dsv'
+[3.433s] INFO:colcon.colcon_core.shell:Creating package script '/home/adnan/Ros2_WS_Final/install/teleop_twist_keyboard_pkg/share/teleop_twist_keyboard_pkg/package.sh'
+[3.435s] INFO:colcon.colcon_core.shell:Creating package script '/home/adnan/Ros2_WS_Final/install/teleop_twist_keyboard_pkg/share/teleop_twist_keyboard_pkg/package.bash'
+[3.437s] INFO:colcon.colcon_core.shell:Creating package script '/home/adnan/Ros2_WS_Final/install/teleop_twist_keyboard_pkg/share/teleop_twist_keyboard_pkg/package.zsh'
+[3.438s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/adnan/Ros2_WS_Final/install/teleop_twist_keyboard_pkg/share/colcon-core/packages/teleop_twist_keyboard_pkg)
+[3.443s] Level 1:colcon.colcon_core.environment:checking '/home/adnan/Ros2_WS_Final/install/robot_publisher_pkg' for CMake module files
+[3.444s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/adnan/Ros2_WS_Final/src/robot_publisher_pkg' returned '0': PYTHONPATH=/home/adnan/Ros2_WS_Final/build/robot_publisher_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/adnan/Ros2_WS_Final/install/robot_publisher_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/robot_publisher_pkg build --build-base /home/adnan/Ros2_WS_Final/build/robot_publisher_pkg/build install --record /home/adnan/Ros2_WS_Final/build/robot_publisher_pkg/install.log --single-version-externally-managed install_data
+[3.445s] Level 1:colcon.colcon_core.environment:checking '/home/adnan/Ros2_WS_Final/install/robot_publisher_pkg' for CMake config files
+[3.446s] Level 1:colcon.colcon_core.environment:checking '/home/adnan/Ros2_WS_Final/install/robot_publisher_pkg/lib'
+[3.446s] Level 1:colcon.colcon_core.environment:checking '/home/adnan/Ros2_WS_Final/install/robot_publisher_pkg/bin'
+[3.446s] Level 1:colcon.colcon_core.environment:checking '/home/adnan/Ros2_WS_Final/install/robot_publisher_pkg/lib/pkgconfig/robot_publisher_pkg.pc'
+[3.446s] Level 1:colcon.colcon_core.environment:checking '/home/adnan/Ros2_WS_Final/install/robot_publisher_pkg/lib/python3.10/site-packages'
+[3.447s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_publisher_pkg', 'pythonpath')
+[3.447s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/adnan/Ros2_WS_Final/install/robot_publisher_pkg/share/robot_publisher_pkg/hook/pythonpath.ps1'
+[3.448s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/adnan/Ros2_WS_Final/install/robot_publisher_pkg/share/robot_publisher_pkg/hook/pythonpath.dsv'
+[3.448s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/adnan/Ros2_WS_Final/install/robot_publisher_pkg/share/robot_publisher_pkg/hook/pythonpath.sh'
+[3.450s] Level 1:colcon.colcon_core.environment:checking '/home/adnan/Ros2_WS_Final/install/robot_publisher_pkg/bin'
+[3.450s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_publisher_pkg)
+[3.451s] INFO:colcon.colcon_core.shell:Creating package script '/home/adnan/Ros2_WS_Final/install/robot_publisher_pkg/share/robot_publisher_pkg/package.ps1'
+[3.452s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/adnan/Ros2_WS_Final/install/robot_publisher_pkg/share/robot_publisher_pkg/package.dsv'
+[3.453s] INFO:colcon.colcon_core.shell:Creating package script '/home/adnan/Ros2_WS_Final/install/robot_publisher_pkg/share/robot_publisher_pkg/package.sh'
+[3.454s] INFO:colcon.colcon_core.shell:Creating package script '/home/adnan/Ros2_WS_Final/install/robot_publisher_pkg/share/robot_publisher_pkg/package.bash'
+[3.454s] INFO:colcon.colcon_core.shell:Creating package script '/home/adnan/Ros2_WS_Final/install/robot_publisher_pkg/share/robot_publisher_pkg/package.zsh'
+[3.455s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/adnan/Ros2_WS_Final/install/robot_publisher_pkg/share/colcon-core/packages/robot_publisher_pkg)
+[3.457s] Level 1:colcon.colcon_core.environment:checking '/home/adnan/Ros2_WS_Final/install/odometry_pkg' for CMake module files
+[3.459s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/adnan/Ros2_WS_Final/src/odometry_pkg' returned '0': PYTHONPATH=/home/adnan/Ros2_WS_Final/build/odometry_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/adnan/Ros2_WS_Final/install/odometry_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/odometry_pkg build --build-base /home/adnan/Ros2_WS_Final/build/odometry_pkg/build install --record /home/adnan/Ros2_WS_Final/build/odometry_pkg/install.log --single-version-externally-managed install_data
+[3.459s] Level 1:colcon.colcon_core.environment:checking '/home/adnan/Ros2_WS_Final/install/odometry_pkg' for CMake config files
+[3.460s] Level 1:colcon.colcon_core.environment:checking '/home/adnan/Ros2_WS_Final/install/odometry_pkg/lib'
+[3.460s] Level 1:colcon.colcon_core.environment:checking '/home/adnan/Ros2_WS_Final/install/odometry_pkg/bin'
+[3.460s] Level 1:colcon.colcon_core.environment:checking '/home/adnan/Ros2_WS_Final/install/odometry_pkg/lib/pkgconfig/odometry_pkg.pc'
+[3.461s] Level 1:colcon.colcon_core.environment:checking '/home/adnan/Ros2_WS_Final/install/odometry_pkg/lib/python3.10/site-packages'
+[3.461s] Level 1:colcon.colcon_core.shell:create_environment_hook('odometry_pkg', 'pythonpath')
+[3.461s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/adnan/Ros2_WS_Final/install/odometry_pkg/share/odometry_pkg/hook/pythonpath.ps1'
+[3.462s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/adnan/Ros2_WS_Final/install/odometry_pkg/share/odometry_pkg/hook/pythonpath.dsv'
+[3.462s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/adnan/Ros2_WS_Final/install/odometry_pkg/share/odometry_pkg/hook/pythonpath.sh'
+[3.463s] Level 1:colcon.colcon_core.environment:checking '/home/adnan/Ros2_WS_Final/install/odometry_pkg/bin'
+[3.463s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(odometry_pkg)
+[3.464s] INFO:colcon.colcon_core.shell:Creating package script '/home/adnan/Ros2_WS_Final/install/odometry_pkg/share/odometry_pkg/package.ps1'
+[3.465s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/adnan/Ros2_WS_Final/install/odometry_pkg/share/odometry_pkg/package.dsv'
+[3.466s] INFO:colcon.colcon_core.shell:Creating package script '/home/adnan/Ros2_WS_Final/install/odometry_pkg/share/odometry_pkg/package.sh'
+[3.467s] INFO:colcon.colcon_core.shell:Creating package script '/home/adnan/Ros2_WS_Final/install/odometry_pkg/share/odometry_pkg/package.bash'
+[3.467s] INFO:colcon.colcon_core.shell:Creating package script '/home/adnan/Ros2_WS_Final/install/odometry_pkg/share/odometry_pkg/package.zsh'
+[3.468s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/adnan/Ros2_WS_Final/install/odometry_pkg/share/colcon-core/packages/odometry_pkg)
+[3.468s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[3.469s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[3.469s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[3.469s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[3.478s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[3.479s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[3.479s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[3.502s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[3.503s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/adnan/Ros2_WS_Final/install/local_setup.ps1'
+[3.505s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/adnan/Ros2_WS_Final/install/_local_setup_util_ps1.py'
+[3.508s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/adnan/Ros2_WS_Final/install/setup.ps1'
+[3.511s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/adnan/Ros2_WS_Final/install/local_setup.sh'
+[3.513s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/adnan/Ros2_WS_Final/install/_local_setup_util_sh.py'
+[3.514s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/adnan/Ros2_WS_Final/install/setup.sh'
+[3.517s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/adnan/Ros2_WS_Final/install/local_setup.bash'
+[3.518s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/adnan/Ros2_WS_Final/install/setup.bash'
+[3.520s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/adnan/Ros2_WS_Final/install/local_setup.zsh'
+[3.521s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/adnan/Ros2_WS_Final/install/setup.zsh'

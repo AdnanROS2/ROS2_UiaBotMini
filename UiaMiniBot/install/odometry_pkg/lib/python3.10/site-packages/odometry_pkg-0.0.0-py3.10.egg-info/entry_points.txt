@@ -1,0 +1,3 @@
+[console_scripts]
+odometry_node = odometry_pkg.odometry_node:main
+

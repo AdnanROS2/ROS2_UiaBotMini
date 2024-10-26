@@ -1,0 +1,21 @@
+[2.062s] Invoking command in '/home/adnan/Ros2_WS_Final/src/robot_publisher_pkg': PYTHONPATH=/home/adnan/Ros2_WS_Final/build/robot_publisher_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/adnan/Ros2_WS_Final/install/robot_publisher_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/robot_publisher_pkg build --build-base /home/adnan/Ros2_WS_Final/build/robot_publisher_pkg/build install --record /home/adnan/Ros2_WS_Final/build/robot_publisher_pkg/install.log --single-version-externally-managed install_data
+[2.569s] running egg_info
+[2.571s] writing ../../build/robot_publisher_pkg/robot_publisher_pkg.egg-info/PKG-INFO
+[2.572s] writing dependency_links to ../../build/robot_publisher_pkg/robot_publisher_pkg.egg-info/dependency_links.txt
+[2.572s] writing entry points to ../../build/robot_publisher_pkg/robot_publisher_pkg.egg-info/entry_points.txt
+[2.573s] writing requirements to ../../build/robot_publisher_pkg/robot_publisher_pkg.egg-info/requires.txt
+[2.573s] writing top-level names to ../../build/robot_publisher_pkg/robot_publisher_pkg.egg-info/top_level.txt
+[2.585s] reading manifest file '../../build/robot_publisher_pkg/robot_publisher_pkg.egg-info/SOURCES.txt'
+[2.585s] writing manifest file '../../build/robot_publisher_pkg/robot_publisher_pkg.egg-info/SOURCES.txt'
+[2.585s] running build
+[2.586s] running build_py
+[2.586s] running install
+[2.587s] running install_lib
+[2.587s] running install_data
+[2.588s] running install_egg_info
+[2.588s] removing '/home/adnan/Ros2_WS_Final/install/robot_publisher_pkg/lib/python3.10/site-packages/robot_publisher_pkg-0.0.0-py3.10.egg-info' (and everything under it)
+[2.589s] Copying ../../build/robot_publisher_pkg/robot_publisher_pkg.egg-info to /home/adnan/Ros2_WS_Final/install/robot_publisher_pkg/lib/python3.10/site-packages/robot_publisher_pkg-0.0.0-py3.10.egg-info
+[2.589s] running install_scripts
+[2.626s] Installing robot_publisher script to /home/adnan/Ros2_WS_Final/install/robot_publisher_pkg/lib/robot_publisher_pkg
+[2.628s] writing list of installed files to '/home/adnan/Ros2_WS_Final/build/robot_publisher_pkg/install.log'
+[2.688s] Invoked command in '/home/adnan/Ros2_WS_Final/src/robot_publisher_pkg' returned '0': PYTHONPATH=/home/adnan/Ros2_WS_Final/build/robot_publisher_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/adnan/Ros2_WS_Final/install/robot_publisher_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/robot_publisher_pkg build --build-base /home/adnan/Ros2_WS_Final/build/robot_publisher_pkg/build install --record /home/adnan/Ros2_WS_Final/build/robot_publisher_pkg/install.log --single-version-externally-managed install_data

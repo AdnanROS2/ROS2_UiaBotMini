@@ -1,166 +1,88 @@
 import sys
-import threading
-import time
-import geometry_msgs.msg
+import termios
+import tty
 import rclpy
-
-if sys.platform == 'win32':
-    import msvcrt
-else:
-    import termios
-    import tty
+from rclpy.node import Node
+from geometry_msgs.msg import Twist
 
 msg = """
-This node takes keypresses from the keyboard and publishes them
-as Twist/TwistStamped messages. It works best with a US keyboard layout.
+Control Your Robot!
 ---------------------------
 Moving around:
-   w,s,a,d
-
-t : up (+z)
-b : down (-z)
-
-anything else : stop
+   w
+a     s     d
+   x
 
 q/z : increase/decrease max speeds by 10%
-r/f : increase/decrease only linear speed by 10%
-e/c : increase/decrease only angular speed by 10%
-
+e/c : increase/decrease turn speed by 10%
 CTRL-C to quit
 """
 
 moveBindings = {
-    'w': (1, 0, 0, 0),    # Fremover (linear.x = 1)
-    's': (-1, 0, 0, 0),   # Bakover (linear.x = -1)
-    'a': (0, 0, 0, 1),    # Venstre rotasjon (angular.z = 1)
-    'd': (0, 0, 0, -1),   # Høyre rotasjon (angular.z = -1)
+    'w': (1, 0, 0, 0),
+    'a': (0, 0, 0, 1),
+    's': (-1, 0, 0, 0),
+    'd': (0, 0, 0, -1),
 }
 
+# Definer hastighets- og rotasjonsbindings for kontrollene
 speedBindings = {
-    'q': (1.1, 1.1), 'z': (.9, .9),
-    'r': (1.1, 1), 'f': (.9, 1),
-    'e': (1, 1.1), 'c': (1, .9),
+    'q': (1.1, 1.0),  # Øker begge hastigheter
+    'z': (0.9, 1.0),  # Reduserer begge hastigheter
+    'e': (1.0, 1.1),  # Øker kun rotasjonshastighet
+    'c': (1.0, 0.9),  # Reduserer kun rotasjonshastighet
 }
 
-def getKey(settings):
-    if sys.platform == 'win32':
-        key = msvcrt.getwch()
-    else:
+# Lagre terminalinnstillinger
+settings = termios.tcgetattr(sys.stdin)
+
+class TeleopTwistKeyboard(Node):
+    def __init__(self):
+        super().__init__('teleop_twist_keyboard')
+        self.publisher_ = self.create_publisher(Twist, 'cmd_vel', 10)
+        self.speed = 0.5
+        self.turn = 1.0
+
+    def get_key(self):
         tty.setraw(sys.stdin.fileno())
         key = sys.stdin.read(1)
         termios.tcsetattr(sys.stdin, termios.TCSADRAIN, settings)
-    return key
+        return key
 
-def saveTerminalSettings():
-    if sys.platform == 'win32':
-        return None
-    return termios.tcgetattr(sys.stdin)
-
-def restoreTerminalSettings(old_settings):
-    if sys.platform == 'win32':
-        return
-    termios.tcsetattr(sys.stdin, termios.TCSADRAIN, old_settings)
-
-def vels(speed, turn):
-    return 'currently:\tspeed %s\tturn %s ' % (speed, turn)
-
-def main():
-    settings = saveTerminalSettings()
-    rclpy.init()
-
-    node = rclpy.create_node('teleop_twist_keyboard')
-
-    # parameters
-    stamped = node.declare_parameter('stamped', False).value
-    frame_id = node.declare_parameter('frame_id', '').value
-    if not stamped and frame_id:
-        raise Exception("'frame_id' can only be set when 'stamped' is True")
-
-    if stamped:
-        TwistMsg = geometry_msgs.msg.TwistStamped
-    else:
-        TwistMsg = geometry_msgs.msg.Twist
-
-    pub = node.create_publisher(TwistMsg, 'cmd_vel', 10)
-
-    spinner = threading.Thread(target=rclpy.spin, args=(node,))
-    spinner.start()
-
-    speed = 0.5
-    turn = 1.0
-    x = 0.0
-    y = 0.0
-    z = 0.0
-    th = 0.0
-    status = 0.0
-
-    twist_msg = TwistMsg()
-
-    if stamped:
-        twist = twist_msg.twist
-        twist_msg.header.stamp = node.get_clock().now().to_msg()
-        twist_msg.header.frame_id = frame_id
-    else:
-        twist = twist_msg
-
-    try:
+    def run(self):
         print(msg)
-        print(vels(speed, turn))
         while True:
-            key = getKey(settings)
+            key = self.get_key()
             if key in moveBindings.keys():
-                x = moveBindings[key][0]
-                y = moveBindings[key][1]
-                z = moveBindings[key][2]
-                th = moveBindings[key][3]
+                x, y, z, th = moveBindings[key]
             elif key in speedBindings.keys():
-                speed = speed * speedBindings[key][0]
-                turn = turn * speedBindings[key][1]
-
-                print(vels(speed, turn))
-                if (status == 14):
-                    print(msg)
-                status = (status + 1) % 15
+                self.speed *= speedBindings[key][0]
+                self.turn *= speedBindings[key][1]
+                print(f"current speed: {self.speed}, turn: {self.turn}")
+                continue
             else:
-                x = 0.0
-                y = 0.0
-                z = 0.0
-                th = 0.0
-                if (key == '\x03'):
+                x, y, z, th = (0, 0, 0, 0)
+                if key == '\x03':
                     break
 
-            if stamped:
-                twist_msg.header.stamp = node.get_clock().now().to_msg()
+            twist = Twist()
+            twist.linear.x = x * self.speed
+            twist.linear.y = y * self.speed
+            twist.linear.z = z * self.speed
+            twist.angular.z = th * self.turn
+            self.publisher_.publish(twist)
 
-            twist.linear.x = x * speed
-            twist.linear.y = y * speed
-            twist.linear.z = z * speed
-            twist.angular.x = 0.0
-            twist.angular.y = 0.0
-            twist.angular.z = th * turn
-            pub.publish(twist_msg)
-
-            # Adjust sleep to control the rate (10 Hz)
-            time.sleep(0.1)  # This sets the rate to ~10Hz
-
+def main(args=None):
+    rclpy.init(args=args)
+    node = TeleopTwistKeyboard()
+    try:
+        node.run()
     except Exception as e:
         print(e)
-
     finally:
-        if stamped:
-            twist_msg.header.stamp = node.get_clock().now().to_msg()
-
-        twist.linear.x = 0.0
-        twist.linear.y = 0.0
-        twist.linear.z = 0.0
-        twist.angular.x = 0.0
-        twist.angular.y = 0.0
-        twist.angular.z = 0.0
-        pub.publish(twist_msg)
+        node.destroy_node()
         rclpy.shutdown()
-        spinner.join()
-
-        restoreTerminalSettings(settings)
+        termios.tcsetattr(sys.stdin, termios.TCSADRAIN, settings)
 
 if __name__ == '__main__':
     main()

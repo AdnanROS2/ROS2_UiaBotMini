@@ -1,0 +1,159 @@
+<?xml version="1.0"?>
+<robot name="cube_robot" xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <!-- Odometry Frame -->
+  <link name="odom"/>
+
+  <!-- Joint to connect odom to base_link -->
+  <joint name="odom_to_base" type="fixed">
+    <parent link="odom"/>
+    <child link="base_link"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </joint>
+
+  <!-- Base (body of the robot) -->
+  <link name="base_link">
+    <visual>
+      <geometry>
+        <box size="0.15 0.15 0.15"/> <!-- Cube: 15cm x 15cm x 15cm -->
+      </geometry>
+      <material name="blue">
+        <color rgba="0 0 1 1"/> <!-- Blue color -->
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.15 0.15 0.15"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1.0"/> <!-- Adjusted mass for the cube -->
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0.002" ixy="0.0" ixz="0.0" iyy="0.002" iyz="0.0" izz="0.002"/>
+    </inertial>
+  </link>
+
+  <!-- Right Wheel -->
+  <link name="right_wheel">
+    <visual>
+      <geometry>
+        <cylinder radius="0.03" length="0.01"/> <!-- Wheel dimensions (3cm radius) -->
+      </geometry>
+      <material name="black">
+        <color rgba="0 0 0 1"/> <!-- Black color -->
+      </material>
+      <origin xyz="0 0 0" rpy="1.5708 0 0"/> <!-- Rotated around Y-axis -->
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder radius="0.03" length="0.01"/>
+      </geometry>
+      <origin xyz="0 0 0" rpy="1.5708 0 0"/>
+    </collision>
+    <inertial>
+      <mass value="0.2"/>
+      <origin xyz="0 0 0" rpy="1.5708 0 0"/>
+      <inertia ixx="0.0001" ixy="0.0" ixz="0.0" iyy="0.0001" iyz="0.0" izz="0.0001"/>
+    </inertial>
+  </link>
+
+  <!-- Left Wheel -->
+  <link name="left_wheel">
+    <visual>
+      <geometry>
+        <cylinder radius="0.03" length="0.01"/> <!-- Wheel dimensions (3cm radius) -->
+      </geometry>
+      <material name="black">
+        <color rgba="0 0 0 1"/>
+      </material>
+      <origin xyz="0 0 0" rpy="1.5708 0 0"/>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder radius="0.03" length="0.01"/>
+      </geometry>
+      <origin xyz="0 0 0" rpy="1.5708 0 0"/>
+    </collision>
+    <inertial>
+      <mass value="2.0"/>
+      <origin xyz="0 0 0" rpy="1.5708 0 0"/>
+      <inertia ixx="0.0001" ixy="0.0" ixz="0.0" iyy="0.0001" iyz="0.0" izz="0.0001"/>
+    </inertial>
+  </link>
+
+  <!-- Joint for Right Wheel -->
+  <joint name="right_wheel_joint" type="continuous">
+    <parent link="base_link"/>
+    <child link="right_wheel"/>
+    <origin xyz="0.07 -0.07 -0.08" rpy="0 0 0"/> <!-- Positioned at the back lower-right -->
+    <axis xyz="0 1 0"/> <!-- Axis of rotation -->
+  </joint>
+
+  <!-- Joint for Left Wheel -->
+  <joint name="left_wheel_joint" type="continuous">
+    <parent link="base_link"/>
+    <child link="left_wheel"/>
+    <origin xyz="0.07 0.07 -0.08" rpy="0 0 0"/> <!-- Positioned at the back lower-left -->
+    <axis xyz="0 1 0"/> <!-- Axis of rotation -->
+  </joint>
+
+  <!-- Laser Sensor -->
+  <link name="laser_frame">
+    <visual>
+      <geometry>
+        <box size="0.05 0.05 0.05"/> <!-- Laser dimensions -->
+      </geometry>
+      <material name="black">
+        <color rgba="0 0 0 1"/> <!-- Black -->
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.05 0.05 0.05"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.1"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0.0001" ixy="0.0" ixz="0.0" iyy="0.0001" iyz="0.0" izz="0.0001"/>
+    </inertial>
+  </link>
+
+  <!-- Joint for Laser Sensor -->
+  <joint name="laser_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="laser_frame"/>
+    <origin xyz="0 0 0.1" rpy="0 0 0"/> <!-- Mounted on top center -->
+  </joint>
+
+  <!-- IMU Link -->
+  <link name="imu_link">
+    <visual>
+      <geometry>
+        <box size="0.05 0.05 0.05"/> <!-- IMU dimensions -->
+      </geometry>
+      <material name="green">
+        <color rgba="0 1 0 1"/> <!-- Green color -->
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.05 0.05 0.05"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.1"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0.0001" ixy="0.0" ixz="0.0" iyy="0.0001" iyz="0.0" izz="0.0001"/>
+    </inertial>
+  </link>
+
+  <!-- Joint for IMU -->
+  <joint name="imu_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="imu_link"/>
+    <origin xyz="0 0 0.08" rpy="0 0 0"/> <!-- Positioned slightly above base_link -->
+  </joint>
+
+</robot>
+
